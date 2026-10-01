@@ -1,0 +1,312 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>Digital Presence Audit &middot; Rooftech Care Ltd &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+/* ---------- injected asset nav ---------- */
+/* display/padding/margin are declared explicitly so a page carrying its own bare
+   nav{} element rule (concept mockups do) cannot restyle the AG1 bar. */
+.agnav{display:block;padding:0;margin:0;position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.ext{color:var(--accent)}
+.agnav a.ext:hover{color:#fff}
+@media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
+</style></head><body>
+<nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./" class="on">Audit</a></div></nav>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Digital Presence Audit &middot; Rooftech Care Ltd &middot; Glenrothes, Fife</div>
+    <h1>Nineteen Pages, One Enquiry Form, And No Town Named Once</h1>
+    <div class="sub">Prepared for Christopher Gray &middot; 1 October 2026 &middot; AG1 Consulting</div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="hero">
+      <div class="gradecard gc-C">
+        <div class="bigletter bl-C">C</div>
+        <div class="score100">Built properly. Not built to be found.</div>
+      </div>
+      <div class="heroread">
+        <h2>This is a better site than most we audit. The problems are narrow and fixable.</h2>
+        <p>Your structure is sound, your schema is correct and your service coverage is thorough &mdash; nineteen
+        pages covering flat, fibreglass, tiled, slate, felt and rubber roofs, chimneys, leadwork, guttering, fascias
+        and emergency work. Somebody built this carefully.</p>
+        <p>What is missing is everything that turns a well-built site into an enquiry: <b>no analytics, no town pages,
+        and an enquiry form on one page out of nineteen.</b></p>
+        <div class="tag">Read on rooftechcare.com, 1 October 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Scorecard</div>
+    <div class="grid">
+      <div class="row"><div><div class="rname">Site structure &amp; service coverage</div><div class="sc">19 pages, every roofing service separately addressed</div><div class="bar"><div class="fill gA" style="width:90%"></div></div></div><div class="badge gA">A</div></div>
+      <div class="row"><div><div class="rname">Structured data</div><div class="sc">Organization, LocalBusiness, PostalAddress, WebSite, BreadcrumbList &mdash; all present</div><div class="bar"><div class="fill gA" style="width:88%"></div></div></div><div class="badge gA">A</div></div>
+      <div class="row"><div><div class="rname">Mobile contact routes</div><div class="sc">Three tappable numbers on every page</div><div class="bar"><div class="fill gB" style="width:75%"></div></div></div><div class="badge gB">B</div></div>
+      <div class="row"><div><div class="rname">Content depth</div><div class="sc">Homepage 506 words, roof repairs 522, contact 271</div><div class="bar"><div class="fill gC" style="width:45%"></div></div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Trust &amp; proof on the page</div><div class="sc">Checkatrade named once. No rating, no review count, no job count</div><div class="bar"><div class="fill gD" style="width:30%"></div></div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Enquiry form coverage</div><div class="sc">1 page of 19 carries a form</div><div class="bar"><div class="fill gD" style="width:25%"></div></div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Local / town pages</div><div class="sc">Zero. "Fife" appears 11 times; no town is named once</div><div class="bar"><div class="fill gF" style="width:8%"></div></div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Analytics &amp; conversion tracking</div><div class="sc">Tag Manager installed with no analytics behind it</div><div class="bar"><div class="fill gF" style="width:10%"></div></div></div><div class="badge gF">F</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 1 &mdash; The Tag Manager Is Installed And Empty</div>
+    <div class="flag">
+      <div class="lab">The one that makes every other number unknowable</div>
+      <p><b>Google Tag Manager is on the site</b> &mdash; container <b>GTM-548KL6C6</b>, loading on every page. That is
+      the hard part, and somebody did it.</p>
+      <p><b>There is no Google Analytics behind it.</b> No GA4 property, no measurement ID, nothing. A tag manager
+      with no tags is a delivery van with nothing in the back.</p>
+      <div class="code">
+GTM-548KL6C6 &nbsp;&nbsp;<span class="ok">present on every page</span>
+GA4 (G-XXXXXXXXXX) &nbsp;<span class="ph">not found</span>
+Google Ads tag (AW-) &nbsp;<span class="ph">not found</span>
+Meta pixel &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ph">not found</span>
+Call tracking &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ph">not found</span>
+      </div>
+      <p>So today nobody can tell you how many people visited, which of your nineteen pages they landed on, which
+      service they were after, or which ones rang you. <b>You are running a roofing business on 3&ndash;4 jobs a week
+      with no idea which half of your marketing is working.</b></p>
+      <p><b>Cost to fix: an afternoon.</b> The container is already there. This is the cheapest high-value item on the
+      page and it should be done whoever you work with.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 2 &mdash; Nineteen Pages, Not One Town</div>
+    <div class="flag">
+      <div class="lab">This is the growth constraint, not the website quality</div>
+      <p>Every one of your nineteen pages is a <b>service</b>: flat roofs, fibreglass, chimney repairs, tiled, slate,
+      leadwork, new roofs, felt, rubber, roof repairs, emergency roofers, roof cleaning, fascias and soffits,
+      guttering, dry ridge and dry verge, plus home, contact, privacy and gallery.</p>
+      <p><b>Not one of them is a place.</b> The word "Fife" appears 11 times across the homepage. <b>Glenrothes,
+      Kirkcaldy, Dunfermline, St Andrews, Leven, Cupar, Cowdenbeath, Lochgelly, Methil, Buckhaven, Markinch,
+      Burntisland, Dalgety Bay, Inverkeithing and Anstruther appear zero times between them.</b></p>
+      <p>That matters because of how people actually search. Almost nobody types "roofing services". They type
+      <b>"roofer Kirkcaldy"</b>, <b>"roof repair Dunfermline"</b>, <b>"emergency roofer near me"</b>. A page titled
+      "Roof Repairs Fife" competes for one of those. A page titled "Roof Repairs in Kirkcaldy" competes for all three.</p>
+      <p>You told us your radius is <b>30&ndash;40 miles but you prefer the shorter runs</b>. Town pages are how you
+      bias the enquiries toward the shorter runs &mdash; you rank hardest where you most want to work, rather than
+      taking whatever Fife sends you.</p>
+      <p><b>You already have the hard part.</b> Nineteen service pages is the expensive bit. Crossing them against
+      your best six or eight towns is the cheap bit, and it is the single largest piece of unclaimed ground you have.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 3 &mdash; The Form Exists On One Page Out Of Nineteen</div>
+    <div class="warn">
+      <div class="lab">Verified, including the part that looked worse than it is</div>
+      <p><b>You do have a working enquiry form.</b> It is on <b>/contact-us/</b>, it is a Gravity Form, and it collects
+      name, phone, email, postcode and address. That is a properly built form and it works.</p>
+      <p><b>It is the only one.</b> Every other page &mdash; including all fifteen service pages &mdash; carries three
+      tappable phone numbers and no form at all.</p>
+      <p>So someone reading your <b>flat roofs</b> page at 9pm, who is not going to ring a tradesman at 9pm, has
+      exactly two options: find the contact page themselves, or leave. Most leave. <b>Your service pages are where the
+      intent is and they have nowhere to put it.</b></p>
+      <p>The fix is a short form at the foot of every service page &mdash; four fields, not twenty &mdash; asking which
+      service, which town, and roughly what the job is. That last question also starts sorting a &pound;100 call-out
+      from a &pound;20,000 re-roof before you drive anywhere.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 4 &mdash; Checkatrade Brings You The Work And Your Site Barely Mentions It</div>
+    <div class="warn">
+      <div class="lab">The proof you have earned is not on the page</div>
+      <p>You told us <b>Checkatrade is where your enquiries come from</b>. On your own website, Checkatrade is
+      mentioned <b>once</b>. TrustATrade once. The word "guarantee" once. "Insured" twice. <b>There is no rating, no
+      review count, no number of jobs completed, and no review text anywhere on the homepage.</b></p>
+      <p>That is backwards, and it costs you in two directions at once:</p>
+      <ul>
+        <li><b>On Checkatrade you compete on price</b>, next to every other roofer in Fife, on a profile you do not
+        own, for a lead they also sell to others.</li>
+        <li><b>On your own site you have no proof at all</b> &mdash; so the one place you could win on trust instead
+        of price is the one place you do not use it.</li>
+      </ul>
+      <p>Whatever rating and review count you have earned on Checkatrade should be the first thing on your homepage,
+      with real reviews underneath and photographs of real roofs. <b>You already did the work. It is just filed on
+      somebody else's website.</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 5 &mdash; A Hundred Pounds And Twenty Thousand Come Through The Same Door</div>
+    <div class="warn">
+      <div class="lab">Worth deciding before more traffic arrives</div>
+      <p>You described your job values as running from around <b>&pound;100 up to &pound;10,000&ndash;&pound;20,000</b>,
+      and said you are happy to take any size. Fair enough &mdash; small jobs keep crews busy and turn into big ones.</p>
+      <p>But your website makes no distinction anywhere. <b>Roof cleaning and guttering sit in the same list as new
+      roofs</b>, with the same prominence and the same single phone number. So a gutter clear and a full re-roof arrive
+      through the identical route, and you cannot tell which is which until you are on the phone &mdash; or worse, in
+      the van.</p>
+      <p>At 3&ndash;4 jobs a week, your constraint is not enquiries, it is <b>which enquiries get your Tuesday</b>.
+      Two or three qualifying questions on the form, and a page that frames the larger work as the main offer, changes
+      the mix without changing the volume.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What Is Genuinely Good &mdash; And We Will Say So On The Call</div>
+    <div class="win">
+      <div class="lab">Do not let anyone rebuild this site</div>
+      <ul>
+        <li><b>Your structured data is correct and complete.</b> Organization, LocalBusiness, PostalAddress, WebSite
+        and BreadcrumbList are all present and valid. Most roofers we audit have none of it. Two of the three
+        competitors we looked at for another Suffolk client did not have it either.</li>
+        <li><b>Nineteen properly separated service pages.</b> This is the expensive, slow part of SEO and it is done.</li>
+        <li><b>Three tappable phone numbers on every page.</b> For a trade where most enquiries are phone calls, that
+        is right.</li>
+        <li><b>A real, working enquiry form</b> that captures postcode &mdash; which matters when you are deciding
+        whether a job is a short run or a long one.</li>
+        <li><b>The site loads over HTTPS, is mobile-formatted and has a clean title and meta description.</b></li>
+      </ul>
+      <p><b>Nothing in this audit is an argument for a new website.</b> It is an argument for finishing this one.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Order We Would Do It In</div>
+    <ul class="road">
+      <li><b>1. Put GA4 in the tag manager that is already there</b> and set conversion tracking on form submits and phone taps. One afternoon. Until this exists, everything else is guesswork.</li>
+      <li><b>2. Put your Checkatrade rating, review count and real reviews on the homepage.</b> Free. You have already earned it.</li>
+      <li><b>3. Add a four-field form to all fifteen service pages.</b> Which service, which town, rough description, phone.</li>
+      <li><b>4. Build town pages for your best six to eight towns</b> &mdash; starting with the short runs you actually prefer.</li>
+      <li><b>5. Claim and complete the Google Business Profile</b>, with real install photos and a review request after every job.</li>
+      <li><b>6. Then, and only then, consider paid traffic.</b> Sending paid clicks into a site with no tracking is paying to learn nothing.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Three or four jobs a week, and no way to tell where any of them came from.</h2>
+    <p>The tracking is an afternoon. The towns are the growth.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 1 October 2026. Every technical finding was read from
+    rooftechcare.com's own served pages and its published sitemap on 1 October 2026 and is reproducible: page count and
+    URLs from <i>page-sitemap.xml</i>, word counts from the served HTML with scripts and styles stripped, tag and schema
+    detection from the served source. <b>Items recorded as "not found" describe what a static read of the served HTML
+    returned and are not proof of absence</b> &mdash; a tag loaded later by script, or present only in a consent-gated
+    state, would not appear. <b>Job counts, job values, radius and the use of Checkatrade are as reported by Christopher
+    Gray at booking and have not been independently verified.</b> We did not access any Checkatrade profile and make no
+    statement about its contents, rating or reviews. <b>No enquiry, ranking or revenue outcome is forecast or promised,
+    and nothing here is a statement about any other supplier's work.</b>
+  </div>
+</footer>
+</body></html>
